@@ -1,100 +1,321 @@
-body {
-    background-color: darkslategrey;
+/*general*/
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-.imagen {
-    background-image: url(../image/design2_image1.jpg);
+body {}
+
+header {
+    height: auto;
+    background-color: rgb(14, 121, 115);
     width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.banner {
+    background-image: url(../image/design2_image1.jpg);
     height: 400px;
     background-size: cover;
     box-sizing: border-box;
 }
 
-.titulo {
-    float: left;
+.title {
+    text-align: start;
     margin-top: 5px;
+    width: 40%;
 
 }
 
-.franja {
+.stripe {
     width: 100%;
     height: 50px;
+    padding: 5px 0;
     background-color: black;
     text-align: center;
     color: aliceblue;
-    padding-top: 25px;
-    position: absolute;
-    margin-top: 350px;
 }
 
 nav {
-    height: 50px;
-    background-color: rgb(96, 179, 230);
-    width: 100%;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
 }
 
-nav ul {
-    list-style-type: none;
+nav ul li {
+    margin: 3px;
+    background-color: rgb(137, 177, 161);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px;
+
 }
 
-nav li {
+nav li a {
     color: black;
     text-decoration: none;
-    background-color: rgb(108, 158, 237);
-    border-radius: 2px;
-    float: right;
-    display: inline;
-    margin: 10px;
-    padding: 0 4px;
+
 }
-nav li a{  
-    text-decoration: none;
-}
+
 .active {
     background-color: rgb(58, 159, 35);
     color: white;
 }
 
-table,th,td{
+.boxImg {
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    position: absolute;
+    margin: 200px 0;
+}
+
+.boxImg2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    position: absolute;
+    margin: 240px 80%;
+}
+
+/*fin general*/
+
+/* Home*/
+.containerHome {
+    width: 50%;
+    height: auto;
+    background-color: rgb(137, 177, 161);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+    margin: 70px auto;
+    padding: 10px;
+}
+
+/* Fin Home*/
+/* Contact*/
+.containerContact {
+    width: 50%;
+    height: auto;
+    background-color: rgb(137, 177, 161);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+    margin: 70px auto;
+    padding: 10px;
+}
+
+/*Fin Contact*/
+/* Game Info*/
+table,
+th,
+td {
     width: 500px;
     border: 1px solid black;
-
 }
 
-.izquierda {
-    float: left;
+.boxTable {
+    width: 50%;
+    height: auto;
+    background-color: rgb(137, 177, 161);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+    margin: 20px auto;
+    padding: 10px;
 }
 
+.boxDiv {
+    width: 50%;
+    height: auto;
+    background-color: rgb(137, 177, 161);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+    margin: 70px auto;
+    padding: 10px;
+}
+
+.titleInfo {
+    width: 37%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* Fin game Info*/
+
+/* Rules*/
+.list1 {
+    list-style-type: lower-latin;
+}
+
+.list2 {
+    list-style-type: decimal;
+    padding: 0 70px;
+}
+
+.sectionRules {
+    margin: 50px;
+    text-align: left;
+    padding: 50px;
+}
+
+.sectionRules p {
+    padding: 0 70px;
+}
+
+/* Fin Rules*/
+/* About*/
+.containerAbout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.boxAbout {
+    width: 200px;
+    height: auto;
+    background-color: rgb(137, 177, 161);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+    margin: 40px 25px;
+    padding: 10px;
+}
+
+/* Fin About*/
 .img2 {
     float: right;
     margin: 80px;
 }
 
-.contenedor{
+/* Registration */
+form {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 11px;
+    margin-top: 20px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form h3 {
+    margin: 20px 0;
+}
+
+form fieldset {
+    padding: 40px;
+}
+
+.containerForm {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
-.box{
-    width: auto;
+
+.boxForm {
+    width: 150px;
     height: auto;
-    background-color: rgb(25, 163, 213);
-    opacity: 0.5;
-    border-radius: 1rem;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
-    margin: 50px;
+    margin: 0px 100px;
+}
+
+.personalinfoForm {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.boxPersonalinfo {
+    width: 350px;
+    height: auto;
 
 }
-.box{
-    width: auto;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
-    margin: 50px;
+.css-selector {
+    background: linear-gradient(270deg, #427a55, #abddd0);
+    background-size: 400% 400%;
 
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
 }
-.sectionRol{
-margin: 50px;
-text-align: center;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media (max-width:768px) {
+    nav {
+        width: 30%;
+        padding: 20px;
+
+    }
+
+    nav li {
+
+        text-decoration: none;
+        border-radius: 4px;
+        display: block;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    nav li a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .boxImg {
+        width: 150px;
+        height: 150px;
+        border-radius: 1rem;
+        position: absolute;
+        margin: 220px 0;
+    }
+
+    .boxImg2 {
+        width: 150px;
+        height: 150px;
+        border-radius: 1rem;
+        position: absolute;
+        margin: 220px 65%;
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+    form fieldset {
+        padding: 0;
+    }
+
+    .sectionRules {
+        padding: 5px;
+    }
 }
